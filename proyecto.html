@@ -11,6 +11,9 @@
     <style>
         body {
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Establece la altura mínima al 100% de la altura de la ventana */
         }
 
         header {
@@ -25,14 +28,42 @@
             padding: 10px 0;
         }
 
+        /* Estilo personalizado para el enlace "Inicio" */
+        .navbar-brand.home,
+        .navbar-brand.home:hover,
+        .navbar-brand.home:focus {
+            color: black !important;
+        }
+
         nav a {
-            color: #fff;
             text-decoration: none;
             padding: 10px;
             margin: 0 10px;
         }
 
+        /* Estilo personalizado para el enlace "Proyectos" */
+        .navbar-nav a.projects,
+        .navbar-nav a.projects:hover,
+        .navbar-nav a.projects:focus {
+            color: #fff !important;
+        }
+
+        /* Estilo personalizado para el enlace "Equipo" */
+        .navbar-nav a.team,
+        .navbar-nav a.team:hover,
+        .navbar-nav a.team:focus {
+            color: black !important;
+        }
+
+        /* Estilo personalizado para el enlace "Contacto" */
+        .navbar-nav a.contact,
+        .navbar-nav a.contact:hover,
+        .navbar-nav a.contact:focus {
+            color: black !important;
+        }
+
         section {
+            flex: 1; /* Hace que el contenido ocupe todo el espacio restante */
             padding: 20px;
         }
 
@@ -47,40 +78,40 @@
 <body>
 
     <header>
-        <h1>Tu Empresa</h1>
+        <h1>Proyecto</h1>
     </header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Inicio</a>
+        <a class="navbar-brand home" href="index.html">Inicio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                    <a class="nav-link projects" href="proyecto.html">Proyectos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#equipo">Equipo</a>
+                    <a class="nav-link team" href="equipo.html">Equipo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a class="nav-link contact" href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <section id="proyecto" class="container mt-4">
-        <h2>Proyecto XYZ</h2>
-        <p class="lead">Detalles y descripción del Proyecto XYZ.</p>
+        <h2>M/D</h2>
+        <p class="lead">I love you</p>
         <!-- Agrega contenido específico del proyecto aquí -->
 
         <!-- Enlace para volver a la página de inicio -->
-        <a class="btn btn-primary" href="index">Volver a Inicio</a>
+        
     </section>
 
-    <footer class="bg-dark text-white text-center mt-4 py-2">
-        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white text-center py-2">
+        <p>&copy; 2023 Tecnosol. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Enlace a Bootstrap JS y jQuery (necesarios para el funcionamiento de algunos componentes) -->
