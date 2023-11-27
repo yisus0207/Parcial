@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <title>Tu Empresa - Proyecto XYZ</title>
 
-   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <style>
@@ -13,7 +12,7 @@
             background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; 
+            min-height: 100vh;
         }
 
         header {
@@ -27,10 +26,11 @@
             background-color: #444;
             padding: 10px 0;
         }
+
         .navbar-brand.home,
         .navbar-brand.home:hover,
         .navbar-brand.home:focus {
-            color: black !important;
+            color: black;
         }
 
         nav a {
@@ -38,16 +38,19 @@
             padding: 10px;
             margin: 0 10px;
         }
+
         .navbar-nav a.projects,
         .navbar-nav a.projects:hover,
         .navbar-nav a.projects:focus {
             color: #fff !important;
         }
+
         .navbar-nav a.team,
         .navbar-nav a.team:hover,
         .navbar-nav a.team:focus {
             color: black !important;
         }
+
         .navbar-nav a.contact,
         .navbar-nav a.contact:hover,
         .navbar-nav a.contact:focus {
@@ -55,8 +58,19 @@
         }
 
         section {
-            flex: 1; 
+            flex: 1;
             padding: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-container img {
+            width: 80%;
+            
+            margin-bottom: 20px;
         }
 
         footer {
@@ -94,15 +108,35 @@
     </nav>
 
     <section id="proyecto" class="container mt-4">
-        <h2>M/D</h2>
-        <p class="lead">I love you</p>
-       
+        <p class="lead">Este proyecto se centra en la recopilación y almacenamiento eficiente de datos mediante una interfaz desarrollada con JFrame en Java. La aplicación se conecta a una base de datos MySQL para gestionar la información de manera centralizada y confiable. <br>A continuación, encontrarás una serie de imágenes que explicarán con más detalle su funcionalidad.</p>
+
+        <div class="image-container">
+            <div>
+                <img src="Ingresar.jpg" alt="Imagen 1">
+                <p class="lead">En este espacio, nos brinda la capacidad de ingresar nuevo <br> inventario, facilitando la inclusión de implementos adicionales <br> o actualizaciones en las existencias. Estas inserciones se <br> registran de forma inmediata en la base de datos, asegurando <br> su integración efectiva y garantizando su disponibilidad para <br> futuras alteraciones.</p>
+                
+            </div>
+
+            <div>
+                <img src="Modificar.jpg" alt="Imagen 2">
+                <p class="lead">En este espacio, tenemos la capacidad de ajustar el inventario <br> actual, ya sea para incorporar nuevos implementos o reducir <br> existencias, y dichas modificaciones se actualizarán directamente <br>en la base de datos, garantizando así su vigencia para futuras <br> alteraciones.</p>
+            </div>
+
+            <div>
+                <img src="Listar.jpg" alt="Imagen 3">
+                <p class="lead">En este ámbito, poseemos la capacidad de listar detalladamente <br> el inventario, ofreciendo una visión completa de los implementos <br> disponibles. Esta función nos permite acceder de manera <br> organizada y clara a la información almacenada en la  base de <br> datos, facilitando así la visualización y gestión efectiva de <br> los recursos disponibles.</p>
+            </div>
+
+            <div>
+                <img src="Eliminar.jpg" alt="Imagen 4">
+                <p class="lead">En este sector, contamos con la capacidad de eliminar elementos <br> del inventario, permitiendo tanto reducir existencias como <br> liberar espacio para nuevos productos. Estas eliminaciones <br> se reflejarán de manera inmediata en la base de datos,<br> asegurando su vigencia para futuras modificaciones.</p>
+            </div>
+        </div>
     </section>
 
     <footer class="bg-dark text-white text-center py-2">
-        <p>&copy; 2023 Tecnosol. Todos los derechos reservados.</p>
+        <p>&copy; 2023 QuantumSolveInnovations. Todos los derechos reservados.</p>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -110,3 +144,4 @@
 
 </body>
 </html>
+
